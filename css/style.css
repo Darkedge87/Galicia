@@ -1,0 +1,245 @@
+/***** reset *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/***** generique *****/
+
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: url("../img/background.jpg") no-repeat top / 100%;
+}
+
+#wrapper{
+	width: 1250px;
+	margin: 0 auto;
+	background-color: #fff;
+    height: 100em;
+    margin-top: 250px;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px #1298cd;
+    background: rgba(221, 220, 220, 0.925);
+}
+
+ul, li, a{
+	text-decoration: none;
+	list-style: none;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-shadow: -5px 5px 6px #000;
+    color:  #165abd;
+    font-size: 70px;
+}
+
+.profil {
+    float: left;
+}
+
+.description {
+    padding-top: 7em;
+}
+
+.profil figure {
+    padding-top: 7em;
+    padding-right: 2em;
+    width: 15em;
+    height: auto;
+    margin-left: 15em;
+}
+
+.profil, .descripton {
+    display: inline-block;
+}
+
+.profil img {
+    width: 15em;
+    height: auto;
+    border: 2px solid black;
+}
+
+/***** header *****/
+
+
+.logo {
+    height: auto;
+    width: 15%;
+    position: relative;
+    top: -9em;
+    left: 7em;
+}
+
+/***** menu *****/
+
+nav {
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+	padding: 5px 20px;
+	margin: 0.7em;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+    background: #1298cd;
+	border: 2px solid #fff;
+	border-radius: 10px 100px / 120px;
+	transition: all 0.5s ease-out;
+}
+
+nav a:hover {
+    border: 2px solid #fff;
+	color: #fff;
+	background: #165abd;
+  	border-radius: 100px 10px / 100px;
+}
+
+
+/***** formulaire *****/
+
+.form_01 {
+    width: 40em;
+    height: 24em;
+    margin: 0 auto;
+    margin-top: 6em;
+    border: 2px solid #1298cd;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.form-group {
+    height: 2em;
+    width: 17em;
+    margin: 1em;
+}
+
+.form-control {
+    height: 2.5em;
+    width: 22em;
+}
+
+.form_01 h2 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+#inputmessage {
+    height: 8em;
+    width: 35em;
+}
+
+.email {
+    display: block;
+}
+
+.col-md-6 {
+    display: inline-block;
+}
+
+.btn {
+    display: block;
+    height: 4em;
+    width: 11em;
+    font-size: 1em;
+    border: 1px solid #1298cd;
+    border-radius: 20px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    background: #165abd;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #1298cd;
+    border: 2px solid black;
+}
+
+
+/***** contenu *****/
+
+
+.realisation {
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.title {
+    border-bottom: 2px solid #165abd;
+    padding-bottom: 0.5em;
+}
+
+.realisation li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.realisation li a {
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+    background: #1298cd;
+    color: #fff;
+    border: 2px dotted #fff;
+    margin: 0.5em;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.realisation li a:hover {
+    transform: scale(1.15);
+    border: 2px solid #fff;
+    background: #165abd;
+}
+
+.realisation img {
+    width: 20em;
+    height: 20em;
+}
+
+
+/***** debut du footer *****/
+
+
+.footer{
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 12em;
+    margin-top: 2em;
+	padding-top: 50px;
+	text-align: center;
+    background: #165abd;
+}
+
+.lien-footer li{
+	display: inline-block;
+}
+
+.lien-footer a{
+	display: block;
+	color: #fff;
+	padding: 0 1em;
+	font-size: 1.1em;
+    font-weight: bold;
+	transition: all 0.2s ease-in-out;
+}
+
+.lien-footer a:hover{
+	transform: scale(1.15);
+}
+
+
+
