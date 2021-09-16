@@ -13,53 +13,28 @@
 
         <?php require_once 'header.php'; ?>
 
-    
-    <!-- Début wrapper -->
+        <form action="login.php" method="POST" class="form_01">
 
-	<!-- <div id="wrapper">
+            <h2>Connexion à l'espace membre</h2>
 
-        <header class="header">
-
-            <h1>Galicia</h1>
-
-            <figure>
-                <img src="../img/logo.jpg" class="logo">
-            </figure>
-
-            <nav>
-                <ul>
-                    <li><a href="../index.php">Accueil</a></li>
-                    <li><a href="realisation.php">Réalisations</a></li>
-                    <li><a href="connexion.php">Connexion</a></li>
-                    <li><a href="inscription.php">Inscription</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </header> -->
-
-            <form action="login.php" method="POST" class="form_01">
-
-                <h2>Connexion à l'espace membre</h2>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="inputemail">Votre email</label>
-                            <input required type="email" name="email" id="inputemail" class="form-control" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
-                        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputemail">Votre email</label>
+                        <input required type="email" name="email" id="inputemail" class="form-control" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="inputmdp">Votre mot de passe</label>
-                            <input required type="password" name="mdp" id="inputmdp" class="form-control" value="<?= isset($_SESSION['inputs']['mdp']) ? $_SESSION['inputs']['mdp'] : '' ?>">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-
                 </div>
-            </form>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputmdp">Votre mot de passe</label>
+                        <input required type="password" name="mdp" id="inputmdp" class="form-control" value="<?= isset($_SESSION['inputs']['mdp']) ? $_SESSION['inputs']['mdp'] : '' ?>">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Connexion</button>
+
+            </div>
+        </form>
 
         <?php require_once 'footer.php'; ?>
         
