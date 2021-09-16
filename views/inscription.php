@@ -12,27 +12,6 @@
 		<?php
 			require_once 'header.php';
 		?>
-		<!-- <div id="wrapper">
-
-		<header class="header">
-
-			<h1>Galicia</h1>
-
-			<figure>
-				<img src="../img/logo.jpg" class="logo">
-			</figure>
-
-			<nav>
-				<ul>
-					<li><a href="../index.php">Accueil</a></li>
-					<li><a href="realisation.php">Réalisations</a></li>
-					<li><a href="connexion.php">Connexion</a></li>
-					<li><a href="inscription.php">Inscription</a></li>
-					<li><a href="contact.php">Contact</a></li>
-				</ul>
-			</nav>
-
-		</header> -->
 
 		<form action="validate_inscription.php" method="POST" class="form_01">
 
@@ -54,7 +33,13 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label for="inputemail">Votre email</label>
-						<input required type="email" name="email" id="inputemail" class="form-control email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
+						<input required type="email" name="email1" id="inputemail" class="form-control email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="inputemail">Confirmer votre email</label>
+						<input required type="email" name="email2" id="inputemail" class="form-control email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
 					</div>
 				</div>
 				<div class="col-md-6">
