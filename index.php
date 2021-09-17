@@ -44,6 +44,7 @@ if(isset($_SESSION['user_id']));
                     <?php else: ?>
                             
                         <li><a href="index.php">Accueil</a></li>
+                        <li><a href="views/realisation.php">Réalisations</a></li>
                         <li><a href="views/espace_membre.php">Espace membre</a></li>
                         <li><a href="views/contact.php">Contact</a></li>
                         <li><a href="views/logout.php">Déconnexion</a></li>
@@ -56,7 +57,7 @@ if(isset($_SESSION['user_id']));
 
             <?php 
                 if(isset($_SESSION['user_id'])) {
-                    echo '<p>Bonjour "'.$user_name.'"</p>';
+                    echo '<p class="connect">Bonjour '.$_SESSION['user_name'].' '.$_SESSION['user_lastname'].'</p>';
                 }
             ?>
 

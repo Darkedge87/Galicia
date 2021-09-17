@@ -3,7 +3,7 @@
     require_once '../controllers/UserManager.php';
 
     $db = Db::getInstance();
-    $user = new User($db);
+    $user = new UserManager($db);
 ?>
 
 <!DOCTYPE html>

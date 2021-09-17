@@ -2,7 +2,7 @@
 
 require_once '../Db/Db.php';
 
-class User {
+class UserManager {
 
     public function getUserByEmail($user_email) {
         $q = Db::getInstance()->query('SELECT * FROM user WHERE user_email = "'.$user_email.'"');
@@ -53,9 +53,44 @@ class User {
                 }
                 else{
 
-                $message = '<p class="error"> Les mots de passe sont differents';
+                    $message = '<p class="error"> Les mots de passe sont differents';
                 }
             }
         }
+    }
+
+    public function logUser($user_email, $mdp1) {
+
+        if ((empty($user_email)) || empty($mdp1)) {
+
+		    $message = '<p class="error"> Vous devez saisir les informations demandées</p>';
+	    }
+	    else {
+
+            $q = Db::getInstance()->query('SELECT user_id, user_name, user_lastname, user_email, user_password FROM user WHERE user_email = "'.$user_email.'"');
+            $donnees = $q->fetch(PDO::FETCH_ASSOC);
+
+            $mdpcrypt = $donnees['user_password'];
+
+		if (password_verify($mdp1, $mdpcrypt)) {
+
+			$user_id = $donnees['user_id'];
+			$user_name = $donnees['user_name'];
+            $user_lastname = $donnees['user_lastname'];
+			$user_password = $donnees['user_password'];
+
+            session_start();
+            $_SESSION['user_id'] = $user_id;
+            $_SESSION['user_name'] = $user_name;
+            $_SESSION['user_lastname'] = $user_lastname;
+            header('location:../index.php');
+		}
+		else {
+            
+            $message = '<p class="error"> Erreur d\'identification.<br/> Email ou/et de mot de passe incorrect. </p>';
+            return $message;
+            // header('location: connexion.php');
+		}
+	}
     }
 }

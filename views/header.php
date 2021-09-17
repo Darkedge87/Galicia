@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 if(isset($_SESSION['user_id']));
 ?>
 
@@ -45,6 +45,7 @@ if(isset($_SESSION['user_id']));
                     <?php else: ?>
                             
                         <li><a href="../index.php">Accueil</a></li>
+                        <li><a href="realisation.php">Réalisations</a></li>
                         <li><a href="espace_membre.php">Espace membre</a></li>
                         <li><a href="contact.php">Contact</a></li>
                         <li><a href="logout.php">Déconnexion</a></li>
@@ -60,15 +61,5 @@ if(isset($_SESSION['user_id']));
                     echo '<p>Bonjour "'.$user_name.'"</p>';
                 }
                 ?>
-
-            <!-- <nav>
-                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="views/realisation.php">Réalisations</a></li>
-                    <li><a href="views/connexion.php">Connexion</a></li>
-                    <li><a href="views/inscription.php">Inscription</a></li>
-                    <li><a href="views/contact.php">Contact</a></li>
-                </ul>
-            </nav> -->
             
         </header>

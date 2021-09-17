@@ -1,3 +1,11 @@
+<?php
+    require_once '../Db/Db.php';
+    require_once '../controllers/UserManager.php';
+
+    $db = Db::getInstance();
+    $logUser = new UserManager($db);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,13 +19,24 @@
 
     <body>
 
-        <?php require_once 'header.php'; ?>
+        <?php require_once 'header.php'; 
 
-        <form action="login.php" method="POST" class="form_01">
+            if (isset($_POST['submit_connexion'])) {
+
+                $user_email = $_POST['email'];
+                $mdp1 = $_POST['mdp1'];
+
+                $logUser->logUser($user_email, $mdp1);             
+
+            }
+        ?>
+
+        <form action="connexion.php" method="POST" class="form_01">
 
             <h2>Connexion à l'espace membre</h2>
 
             <div class="row">
+            
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="inputemail">Votre email</label>
@@ -27,14 +46,15 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="inputmdp">Votre mot de passe</label>
-                        <input required type="password" name="mdp" id="inputmdp" class="form-control" value="<?= isset($_SESSION['inputs']['mdp']) ? $_SESSION['inputs']['mdp'] : '' ?>">
+                        <input required type="password" name="mdp1" id="inputmdp" class="form-control" value="<?= isset($_SESSION['inputs']['mdp']) ? $_SESSION['inputs']['mdp'] : '' ?>">
                     </div>
                 </div>
-
-                <button type="submit" class="btn btn-primary">Connexion</button>
-
+                <a href="#" class="forgot_pswd">Mot de passe oublié ?</a>
+                <button type="submit" name="submit_connexion" class="btn btn-primary">Se connecter</button>
             </div>
+            <?php  if (isset($message)) { echo $message; }?>
         </form>
+
 
         <?php require_once 'footer.php'; ?>
         

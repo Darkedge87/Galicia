@@ -171,6 +171,12 @@ nav a:hover {
 /***** contenu *****/
 
 
+.connect {
+    color: #165abd;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
 .realisation {
     margin-top: 5em;
     margin-left: 2em;
