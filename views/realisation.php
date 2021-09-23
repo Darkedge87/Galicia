@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+if(isset($_SESSION['user_id']));
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -28,6 +35,7 @@
                             <a href="#">Peinture</a>
                             <a href="#">Gros oeuvre</a>
                             <a href="#">Dalle</a>
+                            <a href="#">Carrelage</a>
                             <a href="#">Toiture</a>
                         </li>
                     </ul>

@@ -31,6 +31,8 @@
             }
         ?>
 
+        <?php  if (isset($message)) { echo $message; }?>
+
         <form action="connexion.php" method="POST" class="form_01">
 
             <h2>Connexion à l'espace membre</h2>
@@ -51,8 +53,9 @@
                 </div>
                 <a href="#" class="forgot_pswd">Mot de passe oublié ?</a>
                 <button type="submit" name="submit_connexion" class="btn btn-primary">Se connecter</button>
+                
             </div>
-            <?php  if (isset($message)) { echo $message; }?>
+            
         </form>
 
 

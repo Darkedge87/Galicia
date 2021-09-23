@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+if(isset($_SESSION['user_id']));
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -17,7 +22,7 @@
 
 
 
-        <p>test</p>
+        
 
 
 

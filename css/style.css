@@ -121,6 +121,7 @@ nav a:hover {
 }
 
 .form-group {
+    display: block;
     height: 2em;
     width: 17em;
     margin: 1em;
