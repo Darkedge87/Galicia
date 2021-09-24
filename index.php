@@ -65,16 +65,29 @@ if(isset($_SESSION['user_id']));
 
         <main class="main">
 
+            <div class="head">
+                <h2>Entreprise Galicia : <span class="category">Toiture - Carrelage - Peinture - Dalle</span></h2>
+            </div>
+
             <div class="profil">
                 <figure class="photo">
                     <img src="img/emilio.jpg" alt="photo">
-                    <figcaption>Emilio Gonzalez</figcaption>
+                    <figcaption>Emilio Gonzalez </br>Coordinateur de travaux</figcaption>
                 </figure>
             </div>
 
             <div class="description">
-                <h2>Coordinateur de travaux</h2>
-                <p>test</p>
+                <h3>Coordonnées</h3>
+                <div class="vcard">
+                    <h2 class="fn org">Galicia</h2>
+                    <adress class="adr">
+                        <span class="street-adress">Adresse: 13, rue du Général de Gaulle</span>
+                        <span class="locality">Nilvange</span>
+                        <span class="postal-code">57240</span><br>
+                    </adress>
+                    <p><a href="#" class="mail">Email: emilio.gonzalez0312@gmail.com</a></p>
+                    <a href="#" class="tel">Téléphone: 06 34 31 77 38</a>
+                </div>
             </div>
 
 

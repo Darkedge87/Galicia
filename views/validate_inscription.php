@@ -37,10 +37,10 @@
 
                         $user->createUser($user_name, $user_lastname, $user_email, $mdp1, $mdp2);             
 
-                        echo '<p>Votre réservation a bien été effectuée</p>';
+                        // echo '<p>Votre réservation a bien été effectuée</p>';
                     }
                     else {
-                        echo '<p>Erreur lors de la réservation</p>';
+                        echo '<p>Erreur lors de votre inscription</p>';
 
                     }
                 ?>

@@ -2,11 +2,6 @@
 
 // session_start();
 if(isset($_SESSION['user_id']));
-
-                if(isset($_SESSION['user_id'])) {
-                    echo '<p class="connect">Bonjour '.$_SESSION['user_name'].' '.$_SESSION['user_lastname'].'</p>';
-                }
-
 ?>
 
 <!DOCTYPE html>
@@ -61,6 +56,10 @@ if(isset($_SESSION['user_id']));
 
             </nav>
 
-            
+            <?php 
+                if(isset($_SESSION['user_id'])) {
+                    echo '<p class="connect">Bonjour '.$_SESSION['user_name'].' '.$_SESSION['user_lastname'].'</p>';
+                }
+            ?>
             
         </header>
