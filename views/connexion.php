@@ -45,13 +45,17 @@
                         <input required type="email" name="email" id="inputemail" class="form-control" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
                     </div>
                 </div>
+
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="inputmdp">Votre mot de passe</label>
                         <input required type="password" name="mdp1" id="inputmdp" class="form-control" value="<?= isset($_SESSION['inputs']['mdp']) ? $_SESSION['inputs']['mdp'] : '' ?>">
                     </div>
                 </div>
-                <a href="#" class="forgot_pswd">Mot de passe oublié ?</a>
+                
+                <div class="new_compte"><a href="inscription.php">Pas encore de compte ?</a></div>
+                <div class="forgot_pswd"><a href="recup_password.php">Mot de passe oublié ?</a></div>
+
                 <button type="submit" name="submit_connexion" class="btn btn-primary">Se connecter</button>
                 
             </div>

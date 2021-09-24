@@ -150,6 +150,36 @@ nav a:hover {
     color: red;
 }
 
+.new_compte, .forgot_pswd,  a {
+    color: #165abd;
+}
+
+.new_compte, .forgot_pswd,  a:hover {
+    color: red;
+}
+
+.new_compte, .forgot_pswd {
+    display: inline-block;
+}
+
+.new_compte {
+    width: 13em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.forgot_pswd {
+    width: 13em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.recover-password {
+    grid-area: 1 / 1 / 2 / 12;
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
 /***** contenu *****/
 
 
@@ -235,6 +265,7 @@ figcaption {
 }
 
 .realisation {
+    grid-area: 1 / 1 / 2 / 12;
     margin-top: 5em;
     margin-left: 2em;
 }
