@@ -19,8 +19,9 @@ body {
 	width: 1250px;
 	margin: 0 auto;
 	background-color: #fff;
-    height: 100em;
+    height: auto;
     margin-top: 250px;
+    padding-bottom: 5em;
     border-radius: 30px;
     box-shadow: 10px 5px 5px #1298cd;
     background: rgba(221, 220, 220, 0.925);
@@ -200,7 +201,7 @@ nav a:hover {
     box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.head  h2 {
+.head h2 {
     vertical-align: middle;
     display: table-cell;
     font-size: 1.7em;
@@ -218,8 +219,32 @@ nav a:hover {
     font-weight: bold;
 }
 
+.devis {
+    margin-top: 5em;
+    display: table;
+    height: 3em;
+    width: 36em;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #1298cd;
+}
+
+.devis a {
+    display: table-cell;
+    vertical-align: middle;
+    color: #165abd;
+    font-weight: bold;
+    font-size: 2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.devis:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px #1298cd;
+}
+
 .profil {
-    grid-area: 2 / 3 / 5 / 7;
+    grid-area: 2 / 2 / 5 / 6;
 }
 
 figcaption {
@@ -228,7 +253,7 @@ figcaption {
 }
 
 .description {
-    grid-area: 2 / 7 / 5 / 12;
+    grid-area: 2 / 6 / 5 / 12;
     padding: 1em;
     background: linear-gradient(180deg, rgba(18,152,205,1) 0%, rgba(22,90,189,1) 45%);
     color: #ffff;    
@@ -240,7 +265,6 @@ figcaption {
 
 .photo {
     padding: 2em;
-    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #165abd, 0px 0px 5px 10px rgba(0,0,0,0); 
     box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #165abd, 0px 0px 5px 10px rgba(0,0,0,0);
 }
 
@@ -311,14 +335,18 @@ figcaption {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	height: 12em;
-    margin-top: 2em;
-	padding-top: 50px;
+	height: 25em;
+    margin-top: 3em;
+	padding-top: 1em;
 	text-align: center;
     background: #165abd;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(12, 2fr);
+    grid-auto-rows: minmax(140px, auto);
 }
 
-.lien-footer li{
+.lien-footer {
 	display: inline-block;
 }
 
@@ -333,6 +361,84 @@ figcaption {
 
 .lien-footer a:hover{
 	transform: scale(1.15);
+}
+
+.sociaux {
+    grid-area: 1 / 2 / 3 / 6;
+    border-radius: 30px;
+    background: #1298cd;
+}
+
+.sociaux h3 {
+    font-size: 1.8em;
+    padding-top: 1em;
+    color: #fff;
+}
+
+.sociaux li {
+    display: inline-block;
+    padding: 3em;
+}
+
+.sociaux img {
+    height: 4em;
+    transition: all 0.3s ease-out;
+}
+
+.sociaux img:hover {
+    transform: scale(1.25);
+}
+
+.partenariats {
+    grid-area: 1 / 6 / 3 / 12;
+    border-radius: 30px;
+    background: #1298cd;
+}
+
+.partenariats h3 {
+    font-size: 1.8em;
+    padding-top: 1em;
+    color: #fff;
+}
+
+.partenariats h4 {
+    font-size: 1.5em;
+}
+
+.stem, .gh {
+    display: inline-block;
+    padding-top: 3em;
+    margin: 1em;
+    width: 45%;
+    height: 65%;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.gh {
+    color: #b5a00f;
+}
+
+.stem {
+    color: #165abd;
+}
+
+.info {
+    grid-area: 3 / 1 / 6 / 13;
+    height: 2em;
+    display: flex;
+}
+
+.info a {
+    color: #fff;
+    display: block;
+}
+
+.info li {
+    display: inline-block;
+    width: 10em;
+    text-align: center;
+    border: 1px solid black;
 }
 
 

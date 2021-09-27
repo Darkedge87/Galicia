@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 
-                <div class="new_compte"><a href="inscription.php">Pas encore de compte ?</a></div>
+                <div class="new_compte"><a href="register.php">Pas encore de compte ?</a></div>
                 <div class="forgot_pswd"><a href="recup_password.php">Mot de passe oublié ?</a></div>
 
                 <button type="submit" name="submit_connexion" class="btn btn-primary">Se connecter</button>

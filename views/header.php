@@ -39,7 +39,7 @@ if(isset($_SESSION['user_id']));
                         <li><a href="../index.php">Accueil</a></li>
                         <li><a href="realisation.php">Réalisations</a></li>
                         <li><a href="connexion.php">Connexion</a></li>
-                        <li><a href="inscription.php">Inscription</a></li>
+                        <li><a href="register.php">Inscription</a></li>
                         <li><a href="contact.php">Contact</a></li>
 
                     <?php else: ?>

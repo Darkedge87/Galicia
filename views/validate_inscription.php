@@ -36,12 +36,9 @@
                         $mdp2 = $_POST['mdp2'];
 
                         $user->createUser($user_name, $user_lastname, $user_email, $mdp1, $mdp2);             
+                    } else {
 
-                        // echo '<p>Votre réservation a bien été effectuée</p>';
-                    }
-                    else {
                         echo '<p>Erreur lors de votre inscription</p>';
-
                     }
                 ?>
             

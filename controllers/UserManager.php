@@ -89,7 +89,7 @@ class UserManager {
 		    }
 		    else {
 
-                $message = '<p class="error"> Erreur d\'identification.<br/> Email ou/et de mot de passe incorrect. </p>';
+                $message = '<p class="error"> Erreur d\'identification.<br/> Email ou/et mot de passe incorrect. </p>';
                 echo $message;
 		    }
 	    }

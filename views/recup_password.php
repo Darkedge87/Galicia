@@ -15,7 +15,7 @@
 
     <main class="main">
 
-        <div class="realisation">
+        <div class="recover-password">
 
             <div class="title">
                 <h2>Récupération de mot de passe</h2>
@@ -23,9 +23,10 @@
 
             <form method="POST" class="default-form">
                 <label for="inputemail">Votre email</label>
-                <input type="email" name="recup_mail"/>
-                <button type="submit" name="recup_submit" class="btn btn-primary">Valider</button>
+                <input type="email" name="recover_mail"/>
+                <button type="submit" name="recover_submit" class="btn btn-primary">Valider</button>
             </form>
+
         </div>
 
     </main>
