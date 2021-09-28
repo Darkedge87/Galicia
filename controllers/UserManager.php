@@ -10,12 +10,11 @@ class UserManager {
 
         if($donnees == null) {
             $newUser = $this->createUser($user_email, $user_name);
-        }else{
+        } else {
             $user_id = $donnees['id'];
         }
 
         return $user_id;
-
     }
 
     public function createUser($user_name, $user_lastname, $user_email, $mdp1, $mdp2) {
@@ -23,17 +22,21 @@ class UserManager {
         if ((empty($user_email)) OR empty($user_name) OR empty($user_lastname) OR empty($mdp1) OR empty($mdp2)) {
 
             $message = '<p class="error"> Vous devez saisir les informations demandées</p>';
-        }
-        else{
+        } else {
 
-            $q = Db::getInstance()->query('SELECT count(user_email) FROM user WHERE user_email = "'.$user_email.'"');
+
+            $q = Db::getInstance()->query('SELECT user_email FROM user WHERE user_email = "'.$user_email.'"');
             $donnees = $q->fetch(PDO::FETCH_ASSOC);
 
-            if ($donnees[0] > 0) {
+            // var_dump($donnees['user_email']);
+            // die();
 
+            if (!empty($donnees['user_email'])) {
+                
                 $message = '<p class="error"> Cette email est déjà utilisé </p>';
-            }
-            else{
+                header("location: ../views/register.php");
+                
+            } else {
 
                 if ($mdp1 == $mdp2) {
 
@@ -52,8 +55,7 @@ class UserManager {
                             $_SESSION['user_lastname'] = $user_lastname;
                             header('location:../index.php');
                         }
-                }
-                else{
+                } else {
 
                     $message = '<p class="error"> Les mots de passe sont differents';
                 }

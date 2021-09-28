@@ -138,7 +138,7 @@ if(isset($_SESSION['user_id']));
 
 <div class="info">
     <ul class="lienfooter">
-        <li><a href="mention">Mentions légales</a></li>
+        <li><a href="mention.php">Mentions légales</a></li>
         <li><a href="faq.php">FAQ</a></li>
     </ul>
 </div>

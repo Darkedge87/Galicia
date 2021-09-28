@@ -426,7 +426,6 @@ figcaption {
 .info {
     grid-area: 3 / 1 / 6 / 13;
     height: 2em;
-    display: flex;
 }
 
 .info a {
@@ -438,7 +437,11 @@ figcaption {
     display: inline-block;
     width: 10em;
     text-align: center;
-    border: 1px solid black;
+    transition: all 0.3s ease-out;
+}
+
+.info li:hover {
+    transform: scale(1.25);
 }
 
 
