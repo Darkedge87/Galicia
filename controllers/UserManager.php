@@ -34,7 +34,8 @@ class UserManager {
             if (!empty($donnees['user_email'])) {
                 
                 $message = '<p class="error"> Cette email est déjà utilisé </p>';
-                header("location: ../views/register.php");
+                echo $message;
+                header('location: register.php');
                 
             } else {
 

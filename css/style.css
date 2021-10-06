@@ -38,7 +38,7 @@ h1 {
     padding-bottom: 0.5em;
     text-shadow: -5px 5px 6px #000;
     color:  #165abd;
-    font-size: 70px;
+    font-size: 5em;
 }
 
 
@@ -367,6 +367,7 @@ figcaption {
     grid-area: 1 / 2 / 3 / 6;
     border-radius: 30px;
     background: #1298cd;
+    border: 2px solid #fff;
 }
 
 .sociaux h3 {
@@ -375,24 +376,45 @@ figcaption {
     color: #fff;
 }
 
-.sociaux li {
+.content {
     display: inline-block;
     padding: 3em;
-}
-
-.sociaux img {
-    height: 4em;
     transition: all 0.3s ease-out;
 }
 
-.sociaux img:hover {
+.content img {
+    height: 4em;
+}
+
+.content:hover {
     transform: scale(1.25);
+}
+
+.content:hover p.test {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.content .test {
+    opacity: 0;
+    display: block;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.content .test:hover {
+    opacity: 1;
 }
 
 .partenariats {
     grid-area: 1 / 6 / 3 / 12;
     border-radius: 30px;
     background: #1298cd;
+    border: 2px solid #fff;
+
 }
 
 .partenariats h3 {
@@ -405,14 +427,37 @@ figcaption {
     font-size: 1.5em;
 }
 
-.stem, .gh {
-    display: inline-block;
-    padding-top: 3em;
-    margin: 1em;
-    width: 45%;
-    height: 65%;
+.groupe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stem, .ultimarts, .gh {
     background: #fff;
     border-radius: 30px;
+    height: 12em;
+    width: 32%;
+    margin-top: 1em;
+}
+
+.ultimarts img {
+    margin-top: 1em;
+    width: 95%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.gh img {
+    margin-top: 0.5em;
+    width: 55%;
+    height: auto;
+}
+
+.stem img {
+    margin-top: 1em;
+    width: 75%;
+    height: auto;
 }
 
 .gh {
@@ -443,6 +488,7 @@ figcaption {
 .info li:hover {
     transform: scale(1.25);
 }
+
 
 
 

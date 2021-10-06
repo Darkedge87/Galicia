@@ -13,7 +13,7 @@
 			require_once 'header.php';
 		?>
 
-		<form action="validate_inscription.php" method="POST" class="form_01">
+		<form action="validate_register.php" method="POST" class="form_01">
 
 			<h2>Inscription</h2>
 
@@ -34,12 +34,6 @@
 					<div class="form-group">
 						<label for="inputemail">Votre email</label>
 						<input required type="email" name="email1" id="inputemail" class="form-control email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="inputemail">Confirmer votre email</label>
-						<input required type="email" name="email2" id="inputemail" class="form-control email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '' ?>">
 					</div>
 				</div>
 				<div class="col-md-6">
