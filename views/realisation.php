@@ -34,18 +34,11 @@ if(isset($_SESSION['user_id']));
                             <a href="realisation/facade.php">Façade</a>
                             <a href="realisation/peinture.php">Peinture</a>
                             <a href="realisation/grosoeuvre.php">Gros oeuvre</a>
-                            <a href="realisation/dalle.php">Dalle</a>
+                            <a href="realisation/dalle.php">Dalle et Terrassement</a>
                             <a href="realisation/carrelage.php">Carrelage</a>
                             <a href="realisation/pave.php">Pavé et granulat de marbre</a>
                         </li>
                     </ul>
-
-                    <!-- <a href="#">
-                        <img src="../img/toiture2.jpg">
-                    </a>
-                    <a href="#">
-                        <img src="../img/escalier1.jpg">
-                    </a> -->
 
                 </div>
 

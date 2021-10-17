@@ -1,3 +1,12 @@
+<?php
+    require ('../../models/Image.php');
+    require ('../../config.php');
+
+    $image = new Image();
+    $grosoeuvres = $image->getImages(GROSOEUVRE_DIR_PATH);
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -23,23 +32,31 @@
 
                 <ul>
                     <li>
-                        <!-- <a href="#">Tout</a> -->
                         <a href="facade.php">Façade</a>
                         <a href="peinture.php">Peinture</a>
                         <a href="grosoeuvre.php">Gros oeuvre</a>
-                        <a href="dalle.php">Dalle</a>
+                        <a href="dalle.php">Dalle et Terrassement</a>
                         <a href="carrelage.php">Carrelage</a>
                         <a href="pave.php">Pavé et granulat de marbre</a>
                     </li>
                 </ul>
 
-                <!-- <a href="#">
-                    <img src="../img/toiture2.jpg">
-                </a>
-                <a href="#">
-                    <img src="../img/escalier1.jpg">
-                </a> -->
+            </div>
 
+            <div class="row">
+                <div class="column">
+                    <?php
+                        if (is_array($grosoeuvres) || is_object($grosoeuvres))
+                        {
+                            foreach($grosoeuvres as $grosoeuvre) { 
+                                
+                                echo "<img src='".CARRELAGE_DIR_URL."$grosoeuvre'/>"; 
+                            }
+                        } else {
+                            echo 'Il n\'y a pas de photo pour le moment.';
+                        }
+                    ?>
+                </div>
             </div>
 
         </main>

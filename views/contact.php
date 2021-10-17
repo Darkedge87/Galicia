@@ -58,8 +58,7 @@
                             <select name="service" id="inputservice" class="form-control">
                                 <option value="0">Devis</option>
                                 <option value="1">Rendez-vous</option>
-                                <option value="2">..</option>
-                                <option value="3">...</option>
+                                <option value="2">Renseignement</option>
                             </select>
                         </div>
                     </div>
@@ -68,8 +67,8 @@
                             <label for="inputmessage">Votre message</label>
                             <textarea required id="inputmessage" name="message" class="form-control"><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : '' ?></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
                     </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                 </div>
             </form>
 

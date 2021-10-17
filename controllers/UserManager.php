@@ -33,10 +33,10 @@ class UserManager {
 
             if (!empty($donnees['user_email'])) {
                 
-                $message = '<p class="error"> Cette email est déjà utilisé </p>';
-                echo $message;
+                echo '<p class="error"> Cette email est déjà utilisé </p>';
+                // echo $message;
                 header('location: register.php');
-                
+            
             } else {
 
                 if ($mdp1 == $mdp2) {
@@ -59,6 +59,7 @@ class UserManager {
                 } else {
 
                     $message = '<p class="error"> Les mots de passe sont differents';
+                    header('location: register.php');
                 }
             }
         }

@@ -88,9 +88,10 @@ nav a:hover {
 
 .form_01 {
     width: 40em;
-    height: 24em;
+    height: auto;
     margin: 0 auto;
     margin-top: 6em;
+    padding-bottom: 2em;
     border: 2px solid #1298cd;
     border-radius: 20px;
     background: #fff;
@@ -122,7 +123,7 @@ nav a:hover {
     display: block;
 }
 
-.col-md-6 {
+.col-md-6, .col-md-12 {
     display: inline-block;
 }
 
@@ -289,7 +290,7 @@ figcaption {
 }
 
 .realisation {
-    grid-area: 1 / 1 / 2 / 12;
+    grid-area: 1 / 1 / 2 / 13;
     margin-top: 5em;
     margin-left: 2em;
 }
@@ -327,6 +328,23 @@ figcaption {
     height: 20em;
 }
 
+.row {
+    grid-area: 2 / 2 / 10 / 12;
+}
+
+.column img {
+    width: 21em;
+    padding: 0.5em;
+    height: auto;
+    transform: scale(1);
+	transition: all 1s;
+}
+
+.column img:hover {
+    transform: scale(1.5) ;
+	transition: all 3s;
+}
+
 
 /***** debut du footer *****/
 
@@ -356,7 +374,7 @@ figcaption {
 	padding: 0 1em;
 	font-size: 1.1em;
     font-weight: bold;
-	transition: all 0.2s ease-in-out;
+	transition: all 2s ease-in-out;
 }
 
 .lien-footer a:hover{
@@ -488,7 +506,5 @@ figcaption {
 .info li:hover {
     transform: scale(1.25);
 }
-
-
 
 

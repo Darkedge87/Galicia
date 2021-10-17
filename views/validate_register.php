@@ -31,7 +31,7 @@
 
                         $user_name = $_POST['name'];
                         $user_lastname = $_POST['lastname'];
-                        $user_email = $_POST['email1'];
+                        $user_email = $_POST['email'];
                         $mdp1 = $_POST['mdp1'];
                         $mdp2 = $_POST['mdp2'];
 
