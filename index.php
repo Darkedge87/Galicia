@@ -1,9 +1,3 @@
-<?php
-
-session_start();
-if(isset($_SESSION['user_id']));
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -30,35 +24,14 @@ if(isset($_SESSION['user_id']));
             </figure>
 
             <nav class="nav">
-                <ul>
-    
-                    <?php if(!isset($_SESSION['user_id'])): ?>
-                            
-                        <li><a href="index.php">Accueil</a></li>
-                        <li><a href="views/realisation.php">Réalisations</a></li>
-                        <li><a href="views/connexion.php">Connexion</a></li>
-                        <li><a href="views/register.php">Inscription</a></li>
-                        <li><a href="views/contact.php">Contact</a></li>
-
-                    <?php else: ?>
-                            
-                        <li><a href="index.php">Accueil</a></li>
-                        <li><a href="views/realisation.php">Réalisations</a></li>
-                        <li><a href="views/espace_membre.php">Espace membre</a></li>
-                        <li><a href="views/contact.php">Contact</a></li>
-                        <li><a href="views/logout.php">Déconnexion</a></li>
-
-                    <?php endif; ?>
-                        
+                
+                <ul>    
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="views/realisation.php">Réalisations</a></li>
+                    <li><a href="views/contact.php">Contact</a></li>
                 </ul>
 
             </nav>
-
-            <?php 
-                if(isset($_SESSION['user_id'])) {
-                    echo '<p class="connect">Bonjour '.$_SESSION['user_name'].' '.$_SESSION['user_lastname'].'</p>';
-                }
-            ?>
 
         </header>
 
@@ -92,70 +65,65 @@ if(isset($_SESSION['user_id']));
                     <a href="views/contact.php">Demander un devis</a>
                 </div>
             </div>
-
-            
-
             
         </main>
 
-
-
-
     </div>
-        <!-- Début du footer -->
+
+    <!-- fin wrapper -->
 
 
-        <div class="footer">
+    <!-- Début du footer -->
+    
+    <div class="footer">
 
-            <div class="sociaux">
-                <h3>Nous suivre</h3>
-                <div class="content">
-                    <a href="https://www.facebook.com/profile.php?id=100073105672394" target="_blank">
-                        <img src="img/facebook.jpg" alt="facebook">
-                    </a>
-                    <p class="test">Facebook</p>
-                </div>
-                <div class="content">
-                    <a href="https://www.instagram.com/galicia.0312/" target="_blank">
-                        <img src="img/instagram.jpg" alt="instagram">
-                    </a>
-                    <p class="test">Instagram</p>
-                </div>
+        <div class="sociaux">
+            <h3>Nous suivre</h3>
+            <div class="content">
+                <a href="https://www.facebook.com/profile.php?id=100073105672394" target="_blank">
+                    <img src="img/facebook.jpg" alt="facebook">
+                </a>
+                <p class="test">Facebook</p>
             </div>
-
-            <div class="partenariats">
-                <h3>Partenaires</h3>
-                <div class="groupe">
-                    <div class="stem">
-                        <h4>STEM</h4>
-                        <p>Climatisation - rampe <br> clôture</p>
-                        <img src="img/stem_logo.jpg" alt="logo stem">
-                    </div>
-                    <div class="gh">
-                        <h4>GH Terrassement</h4>
-                        <p>Terrassement - macadam - gros oeuvre</p>
-                        <img src="img/gh_logo.jpg" alt="logo stem">
-                    </div>
-                    <div class="ultimarts">
-                        <h4>Ultim'Arts</h4>
-                        <p>Fresque mural - Graffiti</p>
-                        <img src="img/ultim_arts_logo.jpg" alt="logo">
-                    </div>
-                </div>
-            </div>
-
-            <div class="info">
-                <ul class="lienfooter">
-                    <li><a href="views/mention.php">Mentions légales</a></li>
-                    <li><a href="views/faq.php">FAQ</a></li>
-                </ul>
+            <div class="content">
+                <a href="https://www.instagram.com/galicia.0312/" target="_blank">
+                    <img src="img/instagram.jpg" alt="instagram">
+                </a>
+                <p class="test">Instagram</p>
             </div>
         </div>
 
+        <div class="partenariats">
+            <h3>Partenaires</h3>
+            <div class="groupe">
+                <div class="stem">
+                    <h4>STEM</h4>
+                    <p>Climatisation - rampe <br> clôture</p>
+                    <img src="img/stem_logo.jpg" alt="logo stem">
+                </div>
+                <div class="gh">
+                    <h4>GH Terrassement</h4>
+                    <p>Terrassement - macadam - gros oeuvre</p>
+                    <img src="img/gh_logo.jpg" alt="logo stem">
+                </div>
+                <div class="ultimarts">
+                    <h4>Ultim'Arts</h4>
+                    <p>Fresque mural - Graffiti</p>
+                    <img src="img/ultim_arts_logo.jpg" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <ul class="lienfooter">
+                <li><a href="views/mention.php">Mentions légales</a></li>
+                <li><a href="views/faq.php">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Fin du footer --> 
 
-    </body>
-
-
+</body>
 
 </html>
