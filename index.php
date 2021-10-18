@@ -24,11 +24,21 @@
             </figure>
 
             <nav class="nav">
+<<<<<<< HEAD
                 
                 <ul>    
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="views/realisation.php">Réalisations</a></li>
                     <li><a href="views/contact.php">Contact</a></li>
+=======
+                <ul>
+    
+                    <?php if(!isset($_SESSION['user_id'])): ?>
+                            
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="views/realisation.php">Réalisations</a></li>
+                        <li><a href="views/contact.php">Contact</a></li>
+>>>>>>> db51fb037cd36ba28a522392fe088f9e9ee68ddf
                 </ul>
 
             </nav>
@@ -84,6 +94,7 @@
                     <img src="img/facebook.jpg" alt="facebook">
                 </a>
                 <p class="test">Facebook</p>
+<<<<<<< HEAD
             </div>
             <div class="content">
                 <a href="https://www.instagram.com/galicia.0312/" target="_blank">
@@ -91,6 +102,15 @@
                 </a>
                 <p class="test">Instagram</p>
             </div>
+=======
+            </div>
+            <div class="content">
+                <a href="https://www.instagram.com/galicia.0312/" target="_blank">
+                    <img src="img/instagram.jpg" alt="instagram">
+                </a>
+                <p class="test">Instagram</p>
+            </div>
+>>>>>>> db51fb037cd36ba28a522392fe088f9e9ee68ddf
         </div>
 
         <div class="partenariats">
