@@ -50,7 +50,7 @@
                         {
                             foreach($peintures as $peinture) { 
                                 
-                                echo "<img src='".CARRELAGE_DIR_URL."$peinture'/>"; 
+                                echo "<img src='".PEINTURE_DIR_URL."$peinture'/>"; 
                             }
                         } else {
                             echo 'Il n\'y a pas de photo pour le moment.';

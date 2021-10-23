@@ -16,7 +16,7 @@ body {
 }
 
 #wrapper{
-	width: 1250px;
+	max-width: 1250px;
 	margin: 0 auto;
 	background-color: #fff;
     height: auto;
@@ -224,7 +224,7 @@ nav a:hover {
     margin-top: 5em;
     display: table;
     height: 3em;
-    width: 36em;
+    width: 100%;
     text-align: center;
     background: #fff;
     border: 1px solid #1298cd;
@@ -267,6 +267,11 @@ figcaption {
 .photo {
     padding: 2em;
     box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #165abd, 0px 0px 5px 10px rgba(0,0,0,0);
+    width: auto;
+}
+
+.photo img {
+    width: 100%;
 }
 
 .vcard {
@@ -336,13 +341,12 @@ figcaption {
     width: 21em;
     padding: 0.5em;
     height: auto;
-    transform: scale(1);
-	transition: all 1s;
 }
 
 .column img:hover {
     transform: scale(1.5) ;
 	transition: all 3s;
+    background: #000;
 }
 
 
@@ -408,22 +412,19 @@ figcaption {
     transform: scale(1.25);
 }
 
-.content:hover p.test {
+.content:hover p.icon {
     opacity: 1;
-    transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     transition: opacity .5s ease-in-out;
 }
 
-.content .test {
+.content .icon {
     opacity: 0;
     display: block;
     color: #fff;
     padding-top: 1em;
 }
 
-.content .test:hover {
+.content .icon:hover {
     opacity: 1;
 }
 
@@ -432,7 +433,7 @@ figcaption {
     border-radius: 30px;
     background: #1298cd;
     border: 2px solid #fff;
-
+    height: auto;
 }
 
 .partenariats h3 {
@@ -442,7 +443,7 @@ figcaption {
 }
 
 .partenariats h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .groupe {
@@ -455,7 +456,7 @@ figcaption {
     background: #fff;
     border-radius: 30px;
     height: 12em;
-    width: 32%;
+    width: 30%;
     margin-top: 1em;
 }
 
@@ -507,4 +508,28 @@ figcaption {
     transform: scale(1.25);
 }
 
+@media screen and (max-width: 1200px) {
+    #wrapper {
+        width: 100%; 
+    }
 
+    .main {
+
+    }
+
+    .partenariats {
+
+    }
+    
+    .footer {
+
+    }
+
+    .content {
+        padding: 2em;
+    }
+
+    .groupe h4 {
+        font-size: 1em;
+    }
+}

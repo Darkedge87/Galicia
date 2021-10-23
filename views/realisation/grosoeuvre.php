@@ -50,7 +50,7 @@
                         {
                             foreach($grosoeuvres as $grosoeuvre) { 
                                 
-                                echo "<img src='".CARRELAGE_DIR_URL."$grosoeuvre'/>"; 
+                                echo "<img src='".GROSOEUVRE_DIR_URL."$grosoeuvre'/>"; 
                             }
                         } else {
                             echo 'Il n\'y a pas de photo pour le moment.';

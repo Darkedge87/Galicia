@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if(isset($_SESSION['user_id']));
+
 ?>
 
 
@@ -30,7 +30,6 @@ if(isset($_SESSION['user_id']));
 
                     <ul>
                         <li>
-                            <!-- <a href="#">Tout</a> -->
                             <a href="realisation/facade.php">Façade</a>
                             <a href="realisation/peinture.php">Peinture</a>
                             <a href="realisation/grosoeuvre.php">Gros oeuvre</a>
@@ -41,6 +40,10 @@ if(isset($_SESSION['user_id']));
                     </ul>
 
                 </div>
+
+                <!-- <figure>
+                    <img src="img/"
+                </figure> -->
 
             </main>
 

@@ -19,26 +19,16 @@
 
             <h1>Galicia</h1>
 
-            <figure>
-                <img src="img/logo.jpg" class="logo">
+            <figure class="logo">
+                <img src="img/logo.jpg">
             </figure>
 
             <nav class="nav">
-<<<<<<< HEAD
                 
                 <ul>    
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="views/realisation.php">Réalisations</a></li>
                     <li><a href="views/contact.php">Contact</a></li>
-=======
-                <ul>
-    
-                    <?php if(!isset($_SESSION['user_id'])): ?>
-                            
-                        <li><a href="index.php">Accueil</a></li>
-                        <li><a href="views/realisation.php">Réalisations</a></li>
-                        <li><a href="views/contact.php">Contact</a></li>
->>>>>>> db51fb037cd36ba28a522392fe088f9e9ee68ddf
                 </ul>
 
             </nav>
@@ -67,8 +57,8 @@
                         <span class="locality">Nilvange</span>
                         <span class="postal-code">57240</span><br>
                     </adress>
-                    <p><a href="#" class="mail">Email: emilio.gonzalez0312@gmail.com</a></p>
-                    <a href="#" class="tel">Téléphone: 06 34 31 77 38</a>
+                    <a href="mailto:emilio.gonzalez0312@gmail.com" class="mail">Email: emilio.gonzalez0312@gmail.com</a><br>
+                    <a href="tel:06-34-31-77-38" class="tel">Téléphone: 06 34 31 77 38</a>
                 </div>
 
                 <div class="devis">
@@ -93,24 +83,14 @@
                 <a href="https://www.facebook.com/profile.php?id=100073105672394" target="_blank">
                     <img src="img/facebook.jpg" alt="facebook">
                 </a>
-                <p class="test">Facebook</p>
-<<<<<<< HEAD
+                <p class="icon">Facebook</p>
             </div>
             <div class="content">
                 <a href="https://www.instagram.com/galicia.0312/" target="_blank">
                     <img src="img/instagram.jpg" alt="instagram">
                 </a>
-                <p class="test">Instagram</p>
+                <p class="icon">Instagram</p>
             </div>
-=======
-            </div>
-            <div class="content">
-                <a href="https://www.instagram.com/galicia.0312/" target="_blank">
-                    <img src="img/instagram.jpg" alt="instagram">
-                </a>
-                <p class="test">Instagram</p>
-            </div>
->>>>>>> db51fb037cd36ba28a522392fe088f9e9ee68ddf
         </div>
 
         <div class="partenariats">

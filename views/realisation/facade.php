@@ -50,7 +50,7 @@
                         {
                             foreach($facades as $facade) { 
                                 
-                                echo "<img src='".CARRELAGE_DIR_URL."$facade'/>"; 
+                                echo "<img src='".FACADE_DIR_URL."$facade'/>"; 
                             }
                         } else {
                             echo 'Il n\'y a pas de photo pour le moment.';

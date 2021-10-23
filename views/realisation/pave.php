@@ -50,7 +50,7 @@
                         {
                             foreach($paves as $pave) { 
                                 
-                                echo "<img src='".CARRELAGE_DIR_URL."$pave'/>"; 
+                                echo "<img src='".PAVE_DIR_URL."$pave'/>"; 
                             }
                         } else {
                             echo 'Il n\'y a pas de photo pour le moment.';
