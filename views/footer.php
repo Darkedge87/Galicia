@@ -52,6 +52,6 @@
 				</ul>
 			</div>
 		</div>
-
+		<script src="../js/script.js" type="text/javascript"></script>
 	
 <!-- Fin du footer --> 

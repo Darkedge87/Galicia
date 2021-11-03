@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Galicia</title>
 </head>
 
@@ -17,25 +20,30 @@
 
         <header class="header">
 
-            <h1>Galicia</h1>
+            <div class="test2">
 
-            <figure class="logo">
-                <img src="img/logo.jpg">
-            </figure>
+                <figure class="logo">
+                    <img src="img/logo.jpg">
+                </figure>
+                <div class="test">
+                    <h1>Galicia</h1>
+                </div>
 
-            <nav class="nav">
-                
-                <ul>    
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="views/realisation.php">Réalisations</a></li>
-                    <li><a href="views/contact.php">Contact</a></li>
+            </div>
+            <nav class="navbar" role="navigation">
+                <ul class="navbar-links">    
+                    <li class="navbar-link first"><a href="index.php">Accueil</a></li>
+                    <li class="navbar-link second"><a href="views/realisation.php">Réalisations</a></li>
+                    <li class="navbar-link third"><a href="views/contact.php">Contact</a></li>
                 </ul>
-
+                <button class="burger">
+                    <span class="bar"></span>  
+                </button> 
             </nav>
 
         </header>
 
-        <main class="main">
+        <main class="main" role="main">
 
             <div class="head">
                 <h2>Entreprise Galicia : Coordination de travaux tout corps d'état</h2>
@@ -125,5 +133,5 @@
     <!-- Fin du footer --> 
 
 </body>
-
+    <script src="js/script.js" type="text/javascript"></script>  
 </html>

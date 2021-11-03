@@ -1,9 +1,12 @@
 <?php
-    require ('../../models/Image.php');
-    require ('../../config.php');
+    require_once ('../../models/Image.php');
+    require_once ('../../config.php');
+    require_once ('../../controllers/RealisationManager.php');
 
     $image = new Image();
+    $realisation = new RealisationManager();
     $carrelages = $image->getImages(CARRELAGE_DIR_PATH);
+    $nameRealisations = $realisation->getAllRealisation();
 
 ?>
 
@@ -15,6 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/formulaire.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
     <title>Réalisation Carrelage</title>
 </head>
 
@@ -48,10 +54,17 @@
                     <?php
                         if (is_array($carrelages) || is_object($carrelages))
                         {
-                            foreach($carrelages as $carrelage) { 
+                            foreach ($nameRealisations as $nameRealisation) { ?>
 
-                                echo "<img src='".CARRELAGE_DIR_URL."$carrelage'/>"; 
+                            <h3><?php echo $nameRealisation->getName(); ?></h3>
+                                
+                            <?php
+                                foreach($carrelages as $carrelage) { 
+
+                                    echo "<img src='".CARRELAGE_DIR_URL."$carrelage'/>"; 
+                                }
                             }
+
                         } else {
                             echo 'Il n\'y a pas de photo pour le moment.';
                         }

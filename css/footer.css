@@ -1,0 +1,157 @@
+/********** footer **********/
+
+
+.footer{
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 25em;
+    margin-top: 3em;
+	padding-top: 1em;
+	text-align: center;
+    background: #165abd;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(12, 2fr);
+    grid-auto-rows: minmax(140px, auto);
+}
+
+.lien-footer {
+	display: inline-block;
+}
+
+.lien-footer a{
+	display: block;
+	color: #fff;
+	padding: 0 1em;
+	font-size: 1.1em;
+    font-weight: bold;
+	transition: all 2s ease-in-out;
+}
+
+.lien-footer a:hover{
+	transform: scale(1.15);
+}
+
+.sociaux {
+    grid-area: 1 / 2 / 3 / 6;
+    border-radius: 30px;
+    background: #1298cd;
+    border: 2px solid #fff;
+}
+
+.sociaux h3 {
+    font-size: 1.8em;
+    padding-top: 1em;
+    color: #fff;
+}
+
+.content {
+    display: inline-block;
+    padding: 3em;
+    transition: all 0.3s ease-out;
+}
+
+.content img {
+    height: 4em;
+}
+
+.content:hover {
+    transform: scale(1.25);
+}
+
+.content:hover p.icon {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.content .icon {
+    opacity: 0;
+    display: block;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.content .icon:hover {
+    opacity: 1;
+}
+
+.partenariats {
+    grid-area: 1 / 6 / 3 / 12;
+    border-radius: 30px;
+    background: #1298cd;
+    border: 2px solid #fff;
+    height: auto;
+}
+
+.partenariats h3 {
+    font-size: 1.8em;
+    padding-top: 1em;
+    color: #fff;
+}
+
+.partenariats h4 {
+    font-size: 1.2em;
+}
+
+.groupe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stem, .ultimarts, .gh {
+    background: #fff;
+    border-radius: 30px;
+    height: 12em;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.ultimarts img {
+    margin-top: 1em;
+    width: 95%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.gh img {
+    margin-top: 0.5em;
+    width: 55%;
+    height: auto;
+}
+
+.stem img {
+    margin-top: 1em;
+    width: 75%;
+    height: auto;
+}
+
+.gh {
+    color: #b5a00f;
+}
+
+.stem {
+    color: #165abd;
+}
+
+.info {
+    grid-area: 3 / 1 / 6 / 13;
+    height: 2em;
+}
+
+.info a {
+    color: #fff;
+    display: block;
+}
+
+.info li {
+    display: inline-block;
+    width: 10em;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+.info li:hover {
+    transform: scale(1.25);
+}

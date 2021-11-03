@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr">
+<div id="wrapper">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Galicia</title>
-</head>
+    <header class="header">
 
-    <body>
+        <div class="test2">
 
-    
-    <!-- Début wrapper -->
-
-	<div id="wrapper">
-
-        <header class="header">
-
-            <h1>Galicia</h1>
-
-            <figure>
-                <img src="../img/logo.jpg" class="logo">
+            <figure class="logo">
+                <img src="../img/logo.jpg">
             </figure>
+            <div class="test">
+                <h1>Galicia</h1>
+            </div>
 
-            <nav class="nav">
-
-                <ul>
-                    <li><a href="../index.php">Accueil</a></li>
-                    <li><a href="realisation.php">Réalisations</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+        </div>
+        <nav class="navbar" role="navigation">
+                <ul class="navbar-links">    
+                    <li class="navbar-link first"><a href="../index.php">Accueil</a></li>
+                    <li class="navbar-link second"><a href="realisation.php">Réalisations</a></li>
+                    <li class="navbar-link third"><a href="contact.php">Contact</a></li>
                 </ul>
-
+                <button class="burger">
+                    <span class="bar"></span>  
+                </button> 
             </nav>
-            
-        </header>
+
+    </header>

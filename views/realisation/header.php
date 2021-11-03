@@ -1,24 +1,26 @@
-    
-    <!-- Début wrapper -->
+<div id="wrapper">
 
-	<div id="wrapper">
+    <header class="header">
 
-        <header class="header">
+        <div class="test2">
 
-            <h1>Galicia</h1>
-
-            <figure>
-                <img src="../../img/logo.jpg" class="logo">
+            <figure class="logo">
+                <img src="../../img/logo.jpg">
             </figure>
+            <div class="test">
+                <h1>Galicia</h1>
+            </div>
 
-            <nav class="nav">
-
-                <ul>        
-                    <li><a href="../../index.php">Accueil</a></li>
-                    <li><a href="../realisation.php">Réalisations</a></li>
-                    <li><a href="../contact.php">Contact</a></li>
+        </div>
+        <nav class="navbar" role="navigation">
+                <ul class="navbar-links">    
+                    <li class="navbar-link first"><a href="../../index.php">Accueil</a></li>
+                    <li class="navbar-link second"><a href="../realisation.php">Réalisations</a></li>
+                    <li class="navbar-link third"><a href="../contact.php">Contact</a></li>
                 </ul>
-
+                <button class="burger">
+                    <span class="bar"></span>  
+                </button> 
             </nav>
 
-        </header>
+    </header>

@@ -2,8 +2,6 @@
     // fichier de configuration
 
 
-    define ('WEB_TITLE', 'Rangement d\'image');
-
     define ('WEB_DIR_NAME','galicia\img');
     define ('WEB_DIR_URL', 'http://' . $_SERVER['HTTP_HOST'] .'/'. WEB_DIR_NAME .'/' );
 

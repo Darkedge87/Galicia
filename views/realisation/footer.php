@@ -14,13 +14,13 @@
 					<a href="https://www.facebook.com/profile.php?id=100073105672394" target="_blank">
 						<img src="../../img/facebook.jpg" alt="facebook">
 					</a>
-					<p class="test">Facebook</p>
+					<p class="icon">Facebook</p>
 				</div>
 				<div class="content">
 					<a href="https://www.instagram.com/galicia.0312/" target="_blank">
 						<img src="../../img/instagram.jpg" alt="instagram">
 					</a>
-					<p class="test">Instagram</p>
+					<p class="icon">Instagram</p>
 				</div>
 			</div>
 
@@ -53,5 +53,4 @@
 			</div>
 		</div>
 
-	
-<!-- Fin du footer --> 
+	<script src="../../js/script.js" type="text/javascript"></script>
