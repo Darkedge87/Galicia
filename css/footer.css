@@ -129,10 +129,12 @@
 
 .gh {
     color: #b5a00f;
+    height: auto;
 }
 
 .stem {
     color: #165abd;
+    height: auto;
 }
 
 .info {

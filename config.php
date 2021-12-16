@@ -2,7 +2,7 @@
     // fichier de configuration
 
 
-    define ('WEB_DIR_NAME','galicia\img');
+    define ('WEB_DIR_NAME','galicia/img');
     define ('WEB_DIR_URL', 'http://' . $_SERVER['HTTP_HOST'] .'/'. WEB_DIR_NAME .'/' );
 
     define ('CARRELAGE_DIR_NAME','Carrelage');

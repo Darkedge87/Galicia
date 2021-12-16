@@ -1,9 +1,6 @@
 <?php
-
 session_start();
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,16 +28,16 @@ session_start();
                         <h2>Nos réalisations</h2>
                     </div>
 
-                    <ul>
-                        <li>
-                            <a href="realisation/facade.php">Façade</a>
-                            <a href="realisation/peinture.php">Peinture</a>
-                            <a href="realisation/grosoeuvre.php">Gros oeuvre</a>
-                            <a href="realisation/dalle.php">Dalle et Terrassement</a>
-                            <a href="realisation/carrelage.php">Carrelage</a>
-                            <a href="realisation/pave.php">Pavé et granulat de marbre</a>
-                        </li>
-                    </ul>
+                    <nav class="navbar2" role="navigation">
+                        <ul class="navbar2-links">
+                            <li class="navbar2-link"><a href="realisation/facade.php">Façade</a></li>
+                            <li class="navbar2-link"><a href="realisation/peinture.php">Peinture</a></li>
+                            <li class="navbar2-link"><a href="realisation/grosoeuvre.php">Gros oeuvre</a></li>  
+                            <li class="navbar2-link"><a href="realisation/dalle.php">Dalle et Terrassement</a></li>
+                            <li class="navbar2-link"><a href="realisation/carrelage.php">Carrelage</a></li>
+                            <li class="navbar2-link"><a href="realisation/pave.php">Pavé et granulat de marbre</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
 

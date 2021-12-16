@@ -1,13 +1,6 @@
 <?php
     require_once ('../../models/Image.php');
     require_once ('../../config.php');
-    require_once ('../../controllers/RealisationManager.php');
-
-    $image = new Image();
-    $realisation = new RealisationManager();
-    $carrelages = $image->getImages(CARRELAGE_DIR_PATH);
-    $nameRealisations = $realisation->getAllRealisation();
-
 ?>
 
 <!DOCTYPE html>
@@ -36,47 +29,29 @@
                     <h2>Réalisation Carrelage</h2>
                 </div>
 
-                <ul>
-                    <li>
-                        <a href="facade.php">Façade</a>
-                        <a href="peinture.php">Peinture</a>
-                        <a href="grosoeuvre.php">Gros oeuvre</a>
-                        <a href="dalle.php">Dalle et Terrassement</a>
-                        <a href="carrelage.php">Carrelage</a>
-                        <a href="pave.php">Pavé et granulat de marbre</a>
-                    </li>
-                </ul>
+                <nav class="navbar2" role="navigation">
+                    <ul class="navbar2-links">
+                        <li class="navbar2-link col1"><a href="facade.php">Façade</a></li>
+                        <li class="navbar2-link col1"><a href="peinture.php">Peinture</a></li>
+                        <li class="navbar2-link col1"><a href="grosoeuvre.php">Gros oeuvre</a></li>  
+                        <li class="navbar2-link col2"><a href="dalle.php">Dalle et Terrassement</a></li>
+                        <li class="navbar2-link col2"><a href="carrelage.php">Carrelage</a></li>
+                        <li class="navbar2-link col2"><a href="pave.php">Pavé et granulat de marbre</a></li>
+                    </ul>
+                </nav>
 
             </div>
 
             <div class="row">
                 <div class="column">
                     <?php
-                        if (is_array($carrelages) || is_object($carrelages))
-                        {
-                            foreach ($nameRealisations as $nameRealisation) { ?>
-
-                            <h3><?php echo $nameRealisation->getName(); ?></h3>
-                                
-                            <?php
-                                foreach($carrelages as $carrelage) { 
-
-                                    echo "<img src='".CARRELAGE_DIR_URL."$carrelage'/>"; 
-                                }
-                            }
-
-                        } else {
-                            echo 'Il n\'y a pas de photo pour le moment.';
-                        }
+                        $image = new Image();
+                        $carrelages = $image->getImages(CARRELAGE_DIR_PATH);
                     ?>
                 </div>
             </div>
 
-            
-                
-
         </main>
-
 
         <?php require_once 'footer.php'; ?>
 

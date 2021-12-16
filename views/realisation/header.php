@@ -1,13 +1,13 @@
 <div id="wrapper">
 
-    <header class="header">
+    <header class="header" role="banner">
 
-        <div class="test2">
+        <div class="slogan">
 
             <figure class="logo">
                 <img src="../../img/logo.jpg">
             </figure>
-            <div class="test">
+            <div class="first-title">
                 <h1>Galicia</h1>
             </div>
 

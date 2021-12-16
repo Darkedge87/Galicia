@@ -6,7 +6,7 @@
 <!-- Début du footer -->
 
 
-		<div class="footer">
+		<div class="footer" role="contentinfo">
 
 			<div class="sociaux">
 				<h3>Nous suivre</h3>

@@ -1,24 +1,48 @@
 <?php
 
-    class Image
-    {
+    class Image {
 
-        public function getImages($image_dir)
-        {
+        public function getImages($image_dir) {
 
-            if ($handle = opendir($image_dir))
-            {
-                while (false !== ($entry = readdir($handle)))
-                {
+            if (is_dir($image_dir)) {
+            
+                if ($handle = opendir($image_dir)) {                  
 
-                    if ($entry != "." && $entry != "..")
-                    {
-                        $images[] = $entry;
+                    while (($entry = readdir($handle)) !== false) {
+                        
+                        if ($entry != "." && $entry != "..") {
+                           
+                            Image::getImages( $image_dir.$entry );
+
+                            $files = $image_dir.'/'.$entry;
+
+                            if(!is_dir($files)) {
+;
+                                $images = explode('/', $files, 5);      // pour récuperer les images
+                                $titles = explode('/', $files, 8);      // pour récuperer les titres des dossiers
+            
+                                $title = $titles[6];                    // on assigne les titres des dossiers dans une variable $title
+                                $image = $images[4];                    // on assigne les images dans une variable $image
+                                $lists[] = $image;
+                            } else {
+                                
+                            }
+                        }
                     }
+
+                    if(isset($title)) {
+
+                        echo '<h3>'.$title.'</h3>';    // affiche les titres
+
+                        foreach ($lists as $list) {
+                            echo '<img src="../../'.$list.'">';     // affiche les images
+                        }
+
+                    }   
                 }
-                if( ! isset( $images ) ) $images = NULL;
+                                            
+                if( ! isset( $image ) ) $image = NULL;
                 closedir($handle);
-                return $images; 
             }
         }
 

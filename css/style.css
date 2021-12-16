@@ -53,37 +53,42 @@ h1 {
     width: 100%;
 }
 
-.test2 {
+.slogan {
     display: flex;
     align-items: center;
     height: 28.5em;
+    justify-content: flex-start;
 }
 
-.test {
+.first-title {
     width: 60%;
-    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .logo {
-    width: 15%;
+    max-width: 15%;
     margin-left: 5em;
+    position: absolute;
+    
 }
 
 .logo img {
     width: 100%;
     height: auto;
+    border-radius: 130px 0px 130px 130px;
 }
 
 
 /********** menu **********/
 
-.navbar {  
+.navbar, .navbar2 {  
     display: flex;
     align-items: center; 
     justify-content: center;
 }
 
-.navbar-links { 
+.navbar-links, .navbar2-links { 
     display: flex;  
   }
 
@@ -91,7 +96,12 @@ h1 {
     padding: 0 10px;
 }
 
-.navbar-link > a { 
+.navbar2-link {
+    padding: 0.2em;
+    
+}
+
+.navbar-link > a, .navbar2-link > a { 
     display: block;
 	padding: 5px 20px;
 	margin: 0.7em;
@@ -104,7 +114,7 @@ h1 {
 	transition: all 0.5s ease-out;;
 }
 
-.navbar-link > a:hover { 
+.navbar-link > a:hover, .navbar2-link > a:hover { 
     border: 2px solid #fff;
 	color: #fff;
 	background: #165abd;
@@ -186,6 +196,7 @@ h1 {
 .devis:hover {
     transform: scale(1.05);
     box-shadow: 10px 5px 5px #1298cd;
+
 }
 
 .profil {
@@ -293,4 +304,14 @@ figcaption {
 
 .para {
     margin: 2em;
+}
+
+.content-faq {
+    margin-top: 1.5em;
+    width: 78em;
+}
+
+.content-faq h2 {
+    text-align: center;
+    padding-top: 2em;
 }

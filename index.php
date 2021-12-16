@@ -18,14 +18,14 @@
 
 	<div id="wrapper">
 
-        <header class="header">
+        <header class="header" role="banner">
 
-            <div class="test2">
+            <div class="slogan">
 
                 <figure class="logo">
                     <img src="img/logo.jpg">
                 </figure>
-                <div class="test">
+                <div class="first-title">
                     <h1>Galicia</h1>
                 </div>
 
@@ -52,7 +52,7 @@
             <div class="profil">
                 <figure class="photo">
                     <img src="img/emilio.jpg" alt="photo">
-                    <figcaption>Emilio Gonzalez </br>Coordinateur de travaux</figcaption>
+                    <figcaption>Emilio Gonzalez <br>Coordinateur de travaux</figcaption>
                 </figure>
             </div>
 
@@ -72,6 +72,9 @@
                 <div class="devis">
                     <a href="views/contact.php">Demander un devis</a>
                 </div>
+                <?php
+                    
+                ?>
             </div>
             
         </main>
@@ -83,7 +86,7 @@
 
     <!-- Début du footer -->
     
-    <div class="footer">
+    <div class="footer" role="contentinfo">
 
         <div class="sociaux">
             <h3>Nous suivre</h3>

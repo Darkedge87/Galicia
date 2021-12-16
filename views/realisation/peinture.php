@@ -1,10 +1,6 @@
 <?php
-    require ('../../models/Image.php');
-    require ('../../config.php');
-
-    $image = new Image();
-    $peintures = $image->getImages(PEINTURE_DIR_PATH);
-
+    require_once ('../../models/Image.php');
+    require_once ('../../config.php');
 ?>
 
 <!DOCTYPE html>
@@ -33,37 +29,29 @@
                     <h2>Réalisation Peinture</h2>
                 </div>
 
-                <ul>
-                    <li>
-                        <a href="facade.php">Façade</a>
-                        <a href="peinture.php">Peinture</a>
-                        <a href="grosoeuvre.php">Gros oeuvre</a>
-                        <a href="dalle.php">Dalle et Terrassement</a>
-                        <a href="carrelage.php">Carrelage</a>
-                        <a href="pave.php">Pavé et granulat de marbre</a>
-                    </li>
-                </ul>
+                <nav class="navbar2" role="navigation">
+                    <ul class="navbar2-links">
+                        <li class="navbar2-link"><a href="facade.php">Façade</a></li>
+                        <li class="navbar2-link"><a href="peinture.php">Peinture</a></li>
+                        <li class="navbar2-link"><a href="grosoeuvre.php">Gros oeuvre</a></li>  
+                        <li class="navbar2-link"><a href="dalle.php">Dalle et Terrassement</a></li>
+                        <li class="navbar2-link"><a href="carrelage.php">Carrelage</a></li>
+                        <li class="navbar2-link"><a href="pave.php">Pavé et granulat de marbre</a></li>
+                    </ul>
+                </nav>
 
             </div>
 
             <div class="row">
                 <div class="column">
                     <?php
-                        if (is_array($peintures) || is_object($peintures))
-                        {
-                            foreach($peintures as $peinture) { 
-                                
-                                echo "<img src='".PEINTURE_DIR_URL."$peinture'/>"; 
-                            }
-                        } else {
-                            echo 'Il n\'y a pas de photo pour le moment.';
-                        }
+                        $image = new Image();
+                        $peintures = $image->getImages(PEINTURE_DIR_PATH);
                     ?>
                 </div>
             </div>
 
         </main>
-
 
         <?php require_once 'footer.php'; ?>
 
