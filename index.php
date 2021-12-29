@@ -30,6 +30,9 @@
                 </div>
 
             </div>
+
+            <!-- Début menu -->
+
             <nav class="navbar" role="navigation">
                 <ul class="navbar-links">    
                     <li class="navbar-link first"><a href="index.php">Accueil</a></li>
@@ -40,6 +43,8 @@
                     <span class="bar"></span>  
                 </button> 
             </nav>
+
+            <!-- Fin menu -->
 
         </header>
 
