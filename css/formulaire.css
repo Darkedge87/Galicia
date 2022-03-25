@@ -65,3 +65,19 @@
     left: 20em;
     color: red;
 }
+
+.alert-success, .alert-danger {
+    width: 100%;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.alert-success p{
+    color: green;
+    font-weight: bold;
+}
+
+.alert-danger p {
+    color: red;
+    font-weight: bold;
+}

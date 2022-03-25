@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.galicia37.com/mention.html">
+    <link rel="icon" type="image/x-icon" href="../img/logo.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formulaire.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <title>Mentions légales</title>
+    <meta name="Mentions légagles" content="Les mentions légales"/>
 </head>
 
     <body>
@@ -22,14 +25,19 @@
 
                     <h2>Mentions légales</h2>
                         <p class="para">
-                            Ce site internet est la propriété de Galicia, S.A.R.L au capital de .... euros, 
-                            inscrite au R.C.S. d’Annecy sous le n° B 451 500 326, APE 4399C, SIRET n° 451 500 326 00017, 
-                            TVA n° FR 714 515 003 26, et dont le siège social se situe 12 route de Véry, 74330 CHOISY, FRANCE.
+                            Ce site internet est la propriété de Galicia, Auto Entrepreneur
+                            SIREN n° 512 107 541 00025 et dont le siège social se situe 13, rue du Général de Gaulle, 57240 NILVANGE, FRANCE.
                         </p>
 
                     <h3>Propriété intellectuelle :</h3>
                         <p class="para">
-                            Conformément aux termes des articles L. 122-4, L. 122-5 et L. 335-2 du code de la propriété intellectuelle, 
+                            Conformément aux termes des articles 
+                            <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278911/#:~:text=Toute%20repr%C3%A9sentation%20ou%20reproduction%20int%C3%A9grale,art%20ou%20un%20proc%C3%A9d%C3%A9%20quelconque." target="_blank">
+                                L. 122-4</a>,
+                            <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037388886/">  
+                                L. 122-5</a> et 
+                            <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032655082/">
+                                L. 335-2</a> du code de la propriété intellectuelle, 
                             toute reproduction ou distribution non autorisée de tout ou partie des éléments et informations de ce site est 
                             formellement interdite. Cette règle s’applique également aux images présentes sur ce site. 
                             Seule une autorisation écrite et préalable de l’éditeur du site permettra de déroger à cette règle.

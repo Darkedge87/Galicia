@@ -103,7 +103,7 @@
 .stem, .ultimarts, .gh {
     background: #fff;
     border-radius: 30px;
-    height: 12em;
+    min-height: 11em;
     width: 30%;
     margin-top: 1em;
 }
@@ -111,7 +111,7 @@
 .ultimarts img {
     margin-top: 1em;
     width: 95%;
-    height: auto;
+    height: 50%;
     border-radius: 30px;
 }
 

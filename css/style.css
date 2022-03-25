@@ -57,6 +57,7 @@ h1 {
     display: flex;
     align-items: center;
     height: 28.5em;
+    width: 100%;
     justify-content: flex-start;
 }
 
@@ -306,9 +307,18 @@ figcaption {
     margin: 2em;
 }
 
+.para a {
+    color: #1298cd;
+    font-weight: bold;
+}
+
+.para a:hover {
+    color: #165abd;
+}
+
 .content-faq {
+    grid-area: 1 / 2 / 2 / 12;
     margin-top: 1.5em;
-    width: 78em;
 }
 
 .content-faq h2 {

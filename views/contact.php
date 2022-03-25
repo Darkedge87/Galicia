@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.galicia37.com/contact.html">
+    <link rel="icon" type="image/x-icon" href="../img/logo.jpg">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formulaire.css">
@@ -24,16 +25,19 @@
             <?php if(array_key_exists('errors', $_SESSION)): ?>
                 <div class="alert alert-danger">
                     <?= implode('<br>', $_SESSION['errors']); ?>
+                    <p>Erreur lors de l'envoie du message</p>
                 </div>
             <?php endif; ?>
+
             <?php if(array_key_exists('success', $_SESSION)): ?>
-                <div class="alert alert-success">
-                    <p>Votre email a bien été envoyé</p>
-                </div>
-            <?php endif; ?>
+                    <div class="alert alert-success">
+                        <p>Votre email a bien été envoyé</p>
+                    </div>
+                <?php endif; ?>
 
-            <form action="post_contact.php" method="POST" class="form_01">
 
+            <form action="validation" method="POST" class="form_01">
+                
                 <h2>Nous Contacter</h2>
 
                 <div class="row">
@@ -59,9 +63,9 @@
                         <div class="form-group">
                             <label for="inputservice">Service</label>
                             <select name="service" id="inputservice" class="form-control">
-                                <option value="0">Devis</option>
-                                <option value="1">Rendez-vous</option>
-                                <option value="2">Renseignement</option>
+                                <option value="Devis">Devis</option>
+                                <option value="Rendez-vous">Rendez-vous</option>
+                                <option value="Renseignement">Renseignement</option>
                             </select>
                         </div>
                     </div>

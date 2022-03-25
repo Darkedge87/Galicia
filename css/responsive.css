@@ -27,14 +27,20 @@
 
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 640px) {
 
     #wrapper {
-        min-width: 100vw;
+        max-width: 100vw;
     }
 
     .first-title {
         font-size: 0.7em;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 8em;
     }
 
     .logo {
@@ -64,7 +70,7 @@
         background: #1298cd;     
         transform: translateX(110%);
         transition: all .5s ease-in-out;
-      }
+    }
 
     .navbar2 {
         max-width: 80vw;
@@ -74,10 +80,55 @@
     .navbar2-links {
         display: block;
     }
+    
+    .slogan {
+        display: flex;
+        height: auto;
+    }
+
+    /***** footer *****/
+
+    .footer {
+       display: block; 
+       height: auto;
+    }
+
+    .sociaux, .partenariats {
+        margin: 2em;
+        padding-bottom: 2em;
+    }
+
+    .ultimarts, .gh, .stem {
+        width: 90%;
+    }
+
+    .groupe {
+        flex-direction: column;
+    }
+
+    /***** Formulaire *****/
+
+    .form_01 {
+        max-width: 100%;
+    }
+
+    .form-control {
+        max-width: 100%;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .row {
+        text-align: center;
+    }
 
     .realisation li {
         margin: 0;
     }
+
+    /***** menu *****/
 
     .show-nav .navbar-links { 
         width: 100vw;    
@@ -190,19 +241,4 @@
     .description {
         margin: 2em;
     }
-
-    .slogan {
-        height: auto;
-    }
-
-    .footer {
-       display: block; 
-       height: auto;
-    }
-
-    .sociaux, .partenariats {
-        margin: 2em;
-        padding-bottom: 2em;
-    }
-
 }

@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.galicia37.com/index.php">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Galicia</title>
+    <title>Galicia, Réalisations carrelage, Dalle, Peinture, Fresque</title>
+    <meta name="Accueil" content="Entreprise Galicia : Coordination de travaux tout corps d'état"/>
 </head>
 
 <body>
@@ -23,7 +28,7 @@
             <div class="slogan">
 
                 <figure class="logo">
-                    <img src="img/logo.jpg">
+                    <img src="img/logo.jpg" alt="logo_du_site_galicia">
                 </figure>
                 <div class="first-title">
                     <h1>Galicia</h1>
@@ -35,9 +40,9 @@
 
             <nav class="navbar" role="navigation">
                 <ul class="navbar-links">    
-                    <li class="navbar-link first"><a href="index.php">Accueil</a></li>
-                    <li class="navbar-link second"><a href="views/realisation.php">Réalisations</a></li>
-                    <li class="navbar-link third"><a href="views/contact.php">Contact</a></li>
+                    <li class="navbar-link first"><a href="accueil">Accueil</a></li>
+                    <li class="navbar-link second"><a href="realisation">Réalisations</a></li>
+                    <li class="navbar-link third"><a href="contact">Contact</a></li>
                 </ul>
                 <button class="burger">
                     <span class="bar"></span>  
@@ -56,7 +61,7 @@
 
             <div class="profil">
                 <figure class="photo">
-                    <img src="img/emilio.jpg" alt="photo">
+                    <img src="img/emilio.jpg" alt="photo_Emilio_Gonzalez">
                     <figcaption>Emilio Gonzalez <br>Coordinateur de travaux</figcaption>
                 </figure>
             </div>
@@ -71,11 +76,11 @@
                         <span class="postal-code">57240</span><br>
                     </adress>
                     <a href="mailto:emilio.gonzalez0312@gmail.com" class="mail">Email: emilio.gonzalez0312@gmail.com</a><br>
-                    <a href="tel:06-34-31-77-38" class="tel">Téléphone: 06 34 31 77 38</a>
+                    <a href="tel:06-15-21-07-34" class="tel">Téléphone: 06 15 21 07 34</a>
                 </div>
 
                 <div class="devis">
-                    <a href="views/contact.php">Demander un devis</a>
+                    <a href="contact">Demander un devis</a>
                 </div>
                 <?php
                     
@@ -132,8 +137,8 @@
 
         <div class="info">
             <ul class="lienfooter">
-                <li><a href="views/mention.php">Mentions légales</a></li>
-                <li><a href="views/faq.php">FAQ</a></li>
+                <li><a href="mention">Mentions légales</a></li>
+                <li><a href="faq">FAQ</a></li>
             </ul>
         </div>
     </div>
